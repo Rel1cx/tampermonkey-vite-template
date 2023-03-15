@@ -1,0 +1,14 @@
+{
+    "extends": "eslint-config-with-tsconfig/tsconfig.base.json",
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "isolatedModules": false,
+        "lib": ["ESNext", "DOM", "DOM.Iterable"],
+        "types": ["core-dts"]
+    },
+    "include": ["src/**/*.ts", "src/**/*.d.ts", "types"],
+    "references": [{ "path": "./tsconfig.node.json" }]
+}

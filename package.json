@@ -1,0 +1,25 @@
+{
+  "name": "tampermonkey-vite-template",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "browserslist": "defaults",
+  "devDependencies": {
+    "@total-typescript/ts-reset": "0.4.2",
+    "core-dts": "0.0.3",
+    "eslint": "8.36.0",
+    "eslint-config-with-tsconfig": "1.0.5",
+    "eslint-define-config": "1.16.0",
+    "typescript": "4.9.5",
+    "vite": "4.1.4",
+    "vite-plugin-monkey": "3.0.1"
+  },
+  "dependencies": {}
+}
