@@ -15,11 +15,11 @@
     "@total-typescript/ts-reset": "0.4.2",
     "core-dts": "0.0.3",
     "eslint": "8.36.0",
-    "eslint-config-with-tsconfig": "1.0.7",
-    "eslint-define-config": "1.16.0",
+    "eslint-config-with-tsconfig": "1.0.8",
+    "eslint-define-config": "1.17.0",
     "typescript": "5.0.2",
     "vite": "4.2.0",
-    "vite-plugin-monkey": "3.0.1"
+    "vite-plugin-monkey": "3.0.2"
   },
   "dependencies": {}
 }

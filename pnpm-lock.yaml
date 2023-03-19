@@ -4,21 +4,21 @@ specifiers:
   '@total-typescript/ts-reset': 0.4.2
   core-dts: 0.0.3
   eslint: 8.36.0
-  eslint-config-with-tsconfig: 1.0.7
-  eslint-define-config: 1.16.0
+  eslint-config-with-tsconfig: 1.0.8
+  eslint-define-config: 1.17.0
   typescript: 5.0.2
   vite: 4.2.0
-  vite-plugin-monkey: 3.0.1
+  vite-plugin-monkey: 3.0.2
 
 devDependencies:
   '@total-typescript/ts-reset': 0.4.2
   core-dts: 0.0.3
   eslint: 8.36.0
-  eslint-config-with-tsconfig: 1.0.7_j4766f7ecgqbon3u7zlxn5zszu
-  eslint-define-config: 1.16.0
+  eslint-config-with-tsconfig: 1.0.8_j4766f7ecgqbon3u7zlxn5zszu
+  eslint-define-config: 1.17.0
   typescript: 5.0.2
   vite: 4.2.0
-  vite-plugin-monkey: 3.0.1_vite@4.2.0
+  vite-plugin-monkey: 3.0.2_vite@4.2.0
 
 packages:
 
@@ -1643,8 +1643,8 @@ packages:
       eslint: 8.36.0
     dev: true
 
-  /eslint-config-with-tsconfig/1.0.7_j4766f7ecgqbon3u7zlxn5zszu:
-    resolution: {integrity: sha512-JoLFjxqw7UrfqSWakcH9fdAGZ8qez2HoTukrF+Q4MSV8rrnEsnYJWf7m0coV3dbVC4r555wVe28kEpeZF2DOHw==}
+  /eslint-config-with-tsconfig/1.0.8_j4766f7ecgqbon3u7zlxn5zszu:
+    resolution: {integrity: sha512-bbGSr9zBL1hqFrJM3KHyzFvMAKuFivRXrV8liDy+wIYjNx1zpjmvu87FiRaHV2KkecQh0Cz4Iy0HuF7dslDepA==}
     peerDependencies:
       eslint: '>=8.0.0'
     dependencies:
@@ -1665,8 +1665,8 @@ packages:
       - typescript
     dev: true
 
-  /eslint-define-config/1.16.0:
-    resolution: {integrity: sha512-0gMi2IIDVDNAcy0nDaRss41cBTRMFFAp83WBcGIPi5S7uMOLhNmvbSPozvOoUxv5dIRuGV6E6l+HUnEoFyEbFg==}
+  /eslint-define-config/1.17.0:
+    resolution: {integrity: sha512-J1sweMoWsLcokaiAlfOCC4yMoHbvC/kDAxorm5TkUcD74w+kauMIyjKLM3dOadNxVKOjDiYN1Tu2x9N+4EUuuQ==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0, npm: '>=6.14.13', pnpm: '>= 7.0.0'}
     dev: true
 
@@ -3662,8 +3662,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-monkey/3.0.1_vite@4.2.0:
-    resolution: {integrity: sha512-5lgsjPnG4LdWl8gthVYXh+tBmoTON8PtOKkX0cTTuVdDC9twU/B7Dlz3SSK5Dss7j+mJ/plfUEHa6SbonkXbSA==}
+  /vite-plugin-monkey/3.0.2_vite@4.2.0:
+    resolution: {integrity: sha512-+fJg6mjuGMRgenPk+EmfFNp+Q1b2AhKWqbIfKo175JYHirAlx09fQN4xnEnO/zFDdx47nd04vCVasxbqxW9LXA==}
     engines: {node: ^14.18 || >= 16, pnpm: '>=6'}
     peerDependencies:
       vite: '>=3.0.0'
