@@ -1,21 +1,23 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@swan-io/boxed': 0.12.1
   '@total-typescript/ts-reset': 0.4.2
   core-dts: 0.0.3
   eslint: 8.36.0
   eslint-config-with-tsconfig: 1.2.0
-  eslint-define-config: 1.17.0
   typescript: 5.0.2
   vite: 4.2.1
   vite-plugin-monkey: 3.0.3
+
+dependencies:
+  '@swan-io/boxed': 0.12.1
 
 devDependencies:
   '@total-typescript/ts-reset': 0.4.2
   core-dts: 0.0.3
   eslint: 8.36.0
   eslint-config-with-tsconfig: 1.2.0_j4766f7ecgqbon3u7zlxn5zszu
-  eslint-define-config: 1.17.0
   typescript: 5.0.2
   vite: 4.2.1
   vite-plugin-monkey: 3.0.3_vite@4.2.1
@@ -697,6 +699,10 @@ packages:
     dependencies:
       lodash: 4.17.21
     dev: true
+
+  /@swan-io/boxed/0.12.1:
+    resolution: {integrity: sha512-k+Ks6cqChWBEF55F0yEJUuurgLJzvWnSEEQJBeLp6tMQzVaLZwF7GAB31ElFvTuJCZC7PAOANNFolMAO0nOSog==}
+    dev: false
 
   /@testing-library/dom/8.20.0:
     resolution: {integrity: sha512-d9ULIT+a4EXLX3UU8FBjauG9NnsZHkHztXoIcTsOKoOw030fyjheN9svkTULjJxtYag9DZz5Jz5qkWZDPxTFwA==}
@@ -1744,11 +1750,6 @@ packages:
       - jest
       - supports-color
       - typescript
-    dev: true
-
-  /eslint-define-config/1.17.0:
-    resolution: {integrity: sha512-J1sweMoWsLcokaiAlfOCC4yMoHbvC/kDAxorm5TkUcD74w+kauMIyjKLM3dOadNxVKOjDiYN1Tu2x9N+4EUuuQ==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0, npm: '>=6.14.13', pnpm: '>= 7.0.0'}
     dev: true
 
   /eslint-etc/5.2.0_zjoiagdsdpivymr5idw66lxttq:
