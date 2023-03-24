@@ -4,21 +4,21 @@ specifiers:
   '@total-typescript/ts-reset': 0.4.2
   core-dts: 0.0.3
   eslint: 8.36.0
-  eslint-config-with-tsconfig: 1.1.6
+  eslint-config-with-tsconfig: 1.2.0
   eslint-define-config: 1.17.0
   typescript: 5.0.2
   vite: 4.2.1
-  vite-plugin-monkey: 3.0.2
+  vite-plugin-monkey: 3.0.3
 
 devDependencies:
   '@total-typescript/ts-reset': 0.4.2
   core-dts: 0.0.3
   eslint: 8.36.0
-  eslint-config-with-tsconfig: 1.1.6_j4766f7ecgqbon3u7zlxn5zszu
+  eslint-config-with-tsconfig: 1.2.0_j4766f7ecgqbon3u7zlxn5zszu
   eslint-define-config: 1.17.0
   typescript: 5.0.2
   vite: 4.2.1
-  vite-plugin-monkey: 3.0.2_vite@4.2.1
+  vite-plugin-monkey: 3.0.3_vite@4.2.1
 
 packages:
 
@@ -569,6 +569,15 @@ packages:
   /@eslint/js/8.36.0:
     resolution: {integrity: sha512-lxJ9R5ygVm8ZWgYdUweoq5ownDlJ4upvoWmO4eLxBYHdMo+vZ/Rx0EN6MbKWDJOSUGrqJy2Gt+Dyv/VKml0fjg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: true
+
+  /@fluffyfox/eslint-plugin/0.1.0_eslint@8.36.0:
+    resolution: {integrity: sha512-akpFZb5VGXaja0zrndWNsp8pjxGVNvhmT34sk9MsXAVrVlv7LB4pqfSGJ684y6kR2FIDsT1cVcPIbGuD5W00Sg==}
+    engines: {node: '>= 16'}
+    peerDependencies:
+      eslint: '>= 8'
+    dependencies:
+      eslint: 8.36.0
     dev: true
 
   /@humanwhocodes/config-array/0.11.8:
@@ -1705,8 +1714,17 @@ packages:
       eslint: 8.36.0
     dev: true
 
-  /eslint-config-with-tsconfig/1.1.6_j4766f7ecgqbon3u7zlxn5zszu:
-    resolution: {integrity: sha512-mq5k5HnzI1sTHgqTMBQesmSLG4+G3CWUq4wvKb3uqtakyiMsc97JDeZ1a3DlQY3RqQZZe0kRizb/R8a6y2NeBw==}
+  /eslint-config-sukka/1.7.2_eslint@8.36.0:
+    resolution: {integrity: sha512-jYW2ixScaHEAn2obV5e5J7tCZpmrkfxQ/hJD3yeGa+WS4WrnV8hznTOBq04WMoZHrrKSc2ZfydOltXzSrSPd7Q==}
+    engines: {node: '>= 8.3.0'}
+    dependencies:
+      '@fluffyfox/eslint-plugin': 0.1.0_eslint@8.36.0
+    transitivePeerDependencies:
+      - eslint
+    dev: true
+
+  /eslint-config-with-tsconfig/1.2.0_j4766f7ecgqbon3u7zlxn5zszu:
+    resolution: {integrity: sha512-myeOkGTA8ayeDmkFlG0TG1dJHJDlQSoiQcnfDcRBq7Ag9zN8Fqd2jp3T0mmnCAkp407UafAuhXPA7euY7hoR8g==}
     peerDependencies:
       eslint: '>=8.0.0'
     dependencies:
@@ -1714,13 +1732,12 @@ packages:
       eslint: 8.36.0
       eslint-config-galex: 4.4.2_eslint@8.36.0
       eslint-config-prettier: 8.8.0_eslint@8.36.0
+      eslint-config-sukka: 1.7.2_eslint@8.36.0
       eslint-import-resolver-typescript: 3.5.3_eakrjjutlgqjxe5ydhtnd4qdmy
       eslint-plugin-functional: 5.0.7_j4766f7ecgqbon3u7zlxn5zszu
       eslint-plugin-html: 7.1.0
       eslint-plugin-import: 2.27.5_dw7h2zvvpl2lt26j7ah2hqkw6y
       eslint-plugin-simple-import-sort: 10.0.0_eslint@8.36.0
-      eslint-plugin-svelte3: 4.0.0_wzem237sbvnwe7n34ytc5phasy
-      svelte: 3.57.0
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
       - eslint-import-resolver-webpack
@@ -2121,16 +2138,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - typescript
-    dev: true
-
-  /eslint-plugin-svelte3/4.0.0_wzem237sbvnwe7n34ytc5phasy:
-    resolution: {integrity: sha512-OIx9lgaNzD02+MDFNLw0GEUbuovNcglg+wnd/UY0fbZmlQSz7GlQiQ1f+yX0XvC07XPcDOnFcichqI3xCwp71g==}
-    peerDependencies:
-      eslint: '>=8.0.0'
-      svelte: ^3.2.0
-    dependencies:
-      eslint: 8.36.0
-      svelte: 3.57.0
     dev: true
 
   /eslint-plugin-testing-library/5.9.1_zjoiagdsdpivymr5idw66lxttq:
@@ -3566,11 +3573,6 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /svelte/3.57.0:
-    resolution: {integrity: sha512-WMXEvF+RtAaclw0t3bPDTUe19pplMlfyKDsixbHQYgCWi9+O9VN0kXU1OppzrB9gPAvz4NALuoca2LfW2bOjTQ==}
-    engines: {node: '>= 8'}
-    dev: true
-
   /synckit/0.8.5:
     resolution: {integrity: sha512-L1dapNV6vu2s/4Sputv8xGsCdAVlb5nRDMFU/E27D44l5U6cw1g0dGd45uLc+OXjNMmF4ntiMdCimzcjFKQI8Q==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -3741,8 +3743,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-monkey/3.0.2_vite@4.2.1:
-    resolution: {integrity: sha512-+fJg6mjuGMRgenPk+EmfFNp+Q1b2AhKWqbIfKo175JYHirAlx09fQN4xnEnO/zFDdx47nd04vCVasxbqxW9LXA==}
+  /vite-plugin-monkey/3.0.3_vite@4.2.1:
+    resolution: {integrity: sha512-7LNAZANONxmabUW7zlpV2Wirb0hXUZa2IuBbz9cwKAHLhQ3CiQnKFoRZNVizraKCKNsJBKtv3FCCVpO8ssb0Eg==}
     engines: {node: ^14.18 || >= 16, pnpm: '>=6'}
     peerDependencies:
       vite: '>=3.0.0'
