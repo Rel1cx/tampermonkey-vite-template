@@ -21,6 +21,6 @@
     "vite-plugin-monkey": "3.0.3"
   },
   "dependencies": {
-    "@swan-io/boxed": "0.12.1"
+    "@swan-io/boxed": "0.13.0"
   }
 }

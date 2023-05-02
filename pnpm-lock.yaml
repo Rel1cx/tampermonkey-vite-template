@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@swan-io/boxed': 0.12.1
+  '@swan-io/boxed': 0.13.0
   '@total-typescript/ts-reset': 0.4.2
   core-dts: 0.0.3
   eslint: 8.36.0
@@ -11,7 +11,7 @@ specifiers:
   vite-plugin-monkey: 3.0.3
 
 dependencies:
-  '@swan-io/boxed': 0.12.1
+  '@swan-io/boxed': 0.13.0
 
 devDependencies:
   '@total-typescript/ts-reset': 0.4.2
@@ -692,8 +692,8 @@ packages:
       lodash: 4.17.21
     dev: true
 
-  /@swan-io/boxed/0.12.1:
-    resolution: {integrity: sha512-k+Ks6cqChWBEF55F0yEJUuurgLJzvWnSEEQJBeLp6tMQzVaLZwF7GAB31ElFvTuJCZC7PAOANNFolMAO0nOSog==}
+  /@swan-io/boxed/0.13.0:
+    resolution: {integrity: sha512-lsHeRnTVu2hKYg4Y5eILoppYo+j5K7GzAq7HNg1ejaRTajM0cjxCNlMacQL8T4YuDioTfCTOGB8SIAcqlNepnw==}
     dev: false
 
   /@testing-library/dom/8.20.0:
