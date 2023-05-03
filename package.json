@@ -14,13 +14,14 @@
   "devDependencies": {
     "@total-typescript/ts-reset": "0.4.2",
     "core-dts": "0.0.3",
-    "eslint": "8.36.0",
-    "eslint-config-with-tsconfig": "1.2.2",
-    "typescript": "5.0.2",
-    "vite": "4.2.1",
-    "vite-plugin-monkey": "3.0.3"
+    "eslint": "8.39.0",
+    "eslint-config-with-tsconfig": "1.4.2",
+    "typescript": "5.0.4",
+    "vite": "4.3.4",
+    "vite-plugin-monkey": "3.1.4"
   },
   "dependencies": {
-    "@swan-io/boxed": "0.12.1"
+    "@swan-io/boxed": "1.0.1",
+    "rambda": "7.5.0"
   }
 }

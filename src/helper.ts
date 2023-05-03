@@ -1,33 +1,33 @@
 export const isMobile = () => window.location.href.includes('/mobile/')
 
-export function waitDOMContentLoaded(): Promise<void> {
+export const waitDOMContentLoaded = () => {
     return new Promise((resolve) => {
         switch (document.readyState) {
-            case 'interactive':
-            case 'complete': {
-                resolve()
-                break
-            }
-            default: {
-                window.addEventListener('DOMContentLoaded', () => resolve())
-                break
-            }
+        case 'interactive':
+        case 'complete': {
+            resolve(null)
+            break
+        }
+        default: {
+            window.addEventListener('DOMContentLoaded', () => resolve(null))
+            break
+        }
         }
     })
 }
 
-export function waitForSelector(selector: string): Promise<void> {
+export const waitForSelector = (selector: string) => {
     return new Promise((resolve) => {
         const i = setInterval(() => {
             if (document.querySelectorAll(selector).length > 0) {
                 clearInterval(i)
-                resolve()
+                resolve(null)
             }
         }, 100)
     })
 }
 
-export function wait(ms: number): Promise<void> {
+export const wait = (ms: number) => {
     // eslint-disable-next-line no-promise-executor-return
     return new Promise((resolve) => setTimeout(resolve, ms))
 }
