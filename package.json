@@ -17,7 +17,7 @@
     "eslint": "8.39.0",
     "eslint-config-with-tsconfig": "1.4.4",
     "typescript": "5.0.4",
-    "vite": "4.3.4",
+    "vite": "4.3.5",
     "vite-plugin-monkey": "3.2.0"
   },
   "dependencies": {
