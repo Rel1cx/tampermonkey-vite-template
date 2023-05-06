@@ -5,7 +5,7 @@ dependencies:
     specifier: 1.0.1
     version: 1.0.1
   rambda:
-    specifier: ^7.5.0
+    specifier: 7.5.0
     version: 7.5.0
 
 devDependencies:
@@ -28,8 +28,8 @@ devDependencies:
     specifier: 4.3.4
     version: 4.3.4
   vite-plugin-monkey:
-    specifier: 3.1.4
-    version: 3.1.4(vite@4.3.4)
+    specifier: 3.2.0
+    version: 3.2.0(vite@4.3.4)
 
 packages:
 
@@ -2726,8 +2726,8 @@ packages:
     resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
     dev: true
 
-  /htmlparser2@8.0.1:
-    resolution: {integrity: sha512-4lVbmc1diZC7GUJQtRQ5yBAeUCL1exyMwmForWkRLnwyzWBFxN633SALPMGYaWZvKe9j1pRZJpauvmxENSp/EA==}
+  /htmlparser2@8.0.2:
+    resolution: {integrity: sha512-GYdjWKDkbRLkZ5geuHs5NY1puJ+PXwP7+fHPRz06Eirsb9ugf6d8kkXav6ADhcODhFFPMIXyxkxSuMf3D6NCFA==}
     dependencies:
       domelementtype: 2.3.0
       domhandler: 5.0.3
@@ -3863,8 +3863,8 @@ packages:
       tslib: 2.5.0
     dev: true
 
-  /systemjs@6.14.0:
-    resolution: {integrity: sha512-OMf+kFCYG9fLQerUyw/QVIPfZ+lo579R+usrDzSrZAkvMl6B0tHtc4rUP7DFaPCr7Sy6p5DYD4V9OCF1Sp6+vA==}
+  /systemjs@6.14.1:
+    resolution: {integrity: sha512-8ftwWd+XnQtZ/aGbatrN4QFNGrKJzmbtixW+ODpci7pyoTajg4sonPP8aFLESAcuVxaC1FyDESt+SpfFCH9rZQ==}
     dev: true
 
   /tailwindcss@3.3.2:
@@ -4078,21 +4078,24 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-monkey@3.1.4(vite@4.3.4):
-    resolution: {integrity: sha512-cfiKTob0L/EUCs5TZ6wuAOxH5yVY/2EgEhMejOBZ2mEOsr4LLWVD51WYoVCxUika9SuK2Sapj9OlZpYvddwYSA==}
+  /vite-plugin-monkey@3.2.0(vite@4.3.4):
+    resolution: {integrity: sha512-zXnDyDRmyelmAMZG5anbUdkRmynXpnvAnRCapEWKTdHF99bgT+XXa5LOJCdg/6kyddPcRyt2KCKI8fom+A0mFw==}
     engines: {node: ^14.18 || >= 16, pnpm: '>=6'}
     peerDependencies:
       vite: '>=3.0.0'
+    peerDependenciesMeta:
+      vite:
+        optional: true
     dependencies:
       acorn-walk: 8.2.0
       cross-spawn: 7.0.3
       detect-port: 1.5.1
-      htmlparser2: 8.0.1
+      htmlparser2: 8.0.2
       magic-string: 0.30.0
       mrmime: 1.0.1
       open: 8.4.2
       picocolors: 1.0.0
-      systemjs: 6.14.0
+      systemjs: 6.14.1
       vite: 4.3.4
     transitivePeerDependencies:
       - supports-color
