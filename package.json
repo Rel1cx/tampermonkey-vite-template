@@ -18,7 +18,7 @@
     "eslint-config-with-tsconfig": "1.4.5",
     "typescript": "5.0.4",
     "vite": "4.3.5",
-    "vite-plugin-monkey": "3.2.0"
+    "vite-plugin-monkey": "3.2.1"
   },
   "dependencies": {
     "@swan-io/boxed": "1.0.1",
