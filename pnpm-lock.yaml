@@ -5,8 +5,8 @@ overrides:
 
 dependencies:
   '@swan-io/boxed':
-    specifier: 1.0.1
-    version: 1.0.1
+    specifier: 1.0.2
+    version: 1.0.2
   rambda:
     specifier: 7.5.0
     version: 7.5.0
@@ -760,8 +760,8 @@ packages:
       lodash: 4.17.21
     dev: true
 
-  /@swan-io/boxed@1.0.1:
-    resolution: {integrity: sha512-IFUbuu2FLeSGUf5skI2Ajqv5IY9PXxtplmSyHTFq36Wgt83HHl3xOd3wiQ8tYDkLe+6u2mfnfZIEI6fw2GCGjQ==}
+  /@swan-io/boxed@1.0.2:
+    resolution: {integrity: sha512-Mm7qV+62BUIgOL4/RvBx+hKIij07pAfDsvbuftEqTwbAZidHKta0q8b6Sddgf69vubwPM5K86cY61WMqqUfm8Q==}
     dev: false
 
   /@testing-library/dom@8.20.0:
