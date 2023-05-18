@@ -17,7 +17,7 @@
     "core-dts": "0.0.3",
     "eslint": "8.40.0",
     "eslint-config-with-tsconfig": "1.4.9",
-    "rome": "12.1.0",
+    "rome": "12.1.2",
     "typescript": "5.0.4",
     "vite": "4.3.7",
     "vite-plugin-monkey": "3.2.1"
