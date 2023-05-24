@@ -1,7 +1,5 @@
 {
-    "extends": [
-        "with-tsconfig"
-    ],
+    "extends": ["with-tsconfig"],
     "root": true,
     "env": {
         "node": false,
@@ -10,21 +8,13 @@
     },
     "rules": {
         "indent": "off",
-        "quotes": [
-            "error",
-            "double"
-        ],
+        "quotes": ["error", "double"],
         "unicorn/prefer-spread": "off"
     },
-    "ignorePatterns": [
-        "node_modules/",
-        "dist/"
-    ],
+    "ignorePatterns": ["node_modules/", "dist/"],
     "overrides": [
         {
-            "files": [
-                "vite.config.ts"
-            ],
+            "files": ["vite.config.ts"],
             "parserOptions": {
                 "project": "tsconfig.node.json"
             }
