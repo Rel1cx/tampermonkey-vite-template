@@ -31,11 +31,11 @@ devDependencies:
     specifier: 5.0.4
     version: 5.0.4
   vite:
-    specifier: 4.3.8
-    version: 4.3.8
+    specifier: 4.3.9
+    version: 4.3.9
   vite-plugin-monkey:
     specifier: 3.2.1
-    version: 3.2.1(vite@4.3.8)
+    version: 3.2.1(vite@4.3.9)
 
 packages:
 
@@ -4236,7 +4236,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-monkey@3.2.1(vite@4.3.8):
+  /vite-plugin-monkey@3.2.1(vite@4.3.9):
     resolution: {integrity: sha512-Fow23Ndvkekpke8zcpr+ggaqNSMtRI9O8FYTM0c2c8unz11W/dwcfRg1MEZs0Q9/SNvSN3RKbXIOaGJXGT6xfg==}
     engines: {node: ^14.18 || >= 16, pnpm: '>=6'}
     peerDependencies:
@@ -4254,13 +4254,13 @@ packages:
       open: 8.4.2
       picocolors: 1.0.0
       systemjs: 6.14.1
-      vite: 4.3.8
+      vite: 4.3.9
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite@4.3.8:
-    resolution: {integrity: sha512-uYB8PwN7hbMrf4j1xzGDk/lqjsZvCDbt/JC5dyfxc19Pg8kRm14LinK/uq+HSLNswZEoKmweGdtpbnxRtrAXiQ==}
+  /vite@4.3.9:
+    resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
