@@ -16,7 +16,7 @@
         "@total-typescript/ts-reset": "0.4.2",
         "core-dts": "0.0.3",
         "eslint": "8.41.0",
-        "eslint-config-with-tsconfig": "1.5.2",
+        "eslint-config-with-tsconfig": "1.5.4",
         "rome": "12.1.2",
         "typescript": "5.0.4",
         "vite": "4.3.9",
