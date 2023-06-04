@@ -9,8 +9,8 @@ overrides:
 
 dependencies:
   ftld:
-    specifier: 0.57.14
-    version: 0.57.14
+    specifier: 0.58.0
+    version: 0.58.0
   rambda:
     specifier: 7.5.0
     version: 7.5.0
@@ -2667,8 +2667,8 @@ packages:
     dev: true
     optional: true
 
-  /ftld@0.57.14:
-    resolution: {integrity: sha512-fDyEcN1dCB7fJrahS2VSYKQxBoCSXpqCSubS05fT1ROOHCCFAkRwkABEQs4nLKWRwFScFz4r6eQEsns/xVF99g==}
+  /ftld@0.58.0:
+    resolution: {integrity: sha512-KXfaf1xL1Ga1On6v+4hg1VljMSzarYJXh0LlrSQGD4gKpqAzaKxQ4KjYX2WCAzWz6HY0gRI3pO6stbDL7Jp1dQ==}
     dev: false
 
   /function-bind@1.1.1:
