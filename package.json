@@ -23,7 +23,7 @@
         "vite-plugin-monkey": "3.2.2"
     },
     "dependencies": {
-        "ftld": "0.57.14",
+        "@swan-io/boxed": "1.0.2",
         "rambda": "7.5.0"
     },
     "pnpm": {
