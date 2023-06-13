@@ -1,18 +1,15 @@
+import { match } from "ts-pattern"
+
 export const isMobile = () => window.location.href.includes("/mobile/")
 
 export const waitDOMContentLoaded = () => {
     return new Promise((resolve) => {
-        switch (document.readyState) {
-            case "interactive":
-            case "complete": {
-                resolve(null)
-                break
-            }
-            default: {
-                window.addEventListener("DOMContentLoaded", () => resolve(null))
-                break
-            }
-        }
+        match(document.readyState)
+            .with("interactive", resolve)
+            .with("complete", resolve)
+            .otherwise(() => {
+                window.addEventListener("DOMContentLoaded", resolve)
+            })
     })
 }
 

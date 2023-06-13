@@ -1,3 +1,5 @@
 import "@total-typescript/ts-reset"
 
-console.log("Hello, world!")
+import { waitDOMContentLoaded } from "./helper"
+
+void waitDOMContentLoaded().then(console.log)
