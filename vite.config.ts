@@ -27,7 +27,6 @@ export default defineConfig({
     ],
     build: {
         minify: true,
-        target: "ES2015",
         rollupOptions: {
             treeshake: true,
         },
