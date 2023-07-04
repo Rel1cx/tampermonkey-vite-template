@@ -1,5 +1,2 @@
-import "@total-typescript/ts-reset"
-
-import { waitDOMContentLoaded } from "./helper"
-
-void waitDOMContentLoaded().then(console.log)
+// eslint-disable-next-line functional/no-expression-statements
+console.log("Hello World!")

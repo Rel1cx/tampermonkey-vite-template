@@ -7,9 +7,12 @@
         "es2021": true
     },
     "rules": {
+        "quotes": "off",
         "indent": "off",
-        "quotes": ["error", "double"],
-        "unicorn/prefer-spread": "off"
+        "unicorn/prefer-spread": "off",
+        "functional/no-return-void": "off",
+        "functional/functional-parameters": "off",
+        "functional/no-expression-statements": "off"
     },
     "ignorePatterns": ["node_modules/", "dist/"],
     "overrides": [

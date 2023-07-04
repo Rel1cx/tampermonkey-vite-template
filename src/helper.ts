@@ -1,8 +1,8 @@
 import { match } from "ts-pattern"
 
-export const isMobile = () => window.location.href.includes("/mobile/")
+export const isMobile = (): boolean => window.location.href.includes("/mobile/")
 
-export const waitDOMContentLoaded = () => {
+export const waitDOMContentLoaded = (): Promise<unknown> => {
     return new Promise((resolve) => {
         match(document.readyState)
             .with("interactive", resolve)
@@ -13,18 +13,19 @@ export const waitDOMContentLoaded = () => {
     })
 }
 
-export const waitForSelector = (selector: string) => {
+export const waitForSelector = (selector: string): Promise<unknown> => {
     return new Promise((resolve) => {
         const i = setInterval(() => {
-            if (document.querySelectorAll(selector).length > 0) {
-                clearInterval(i)
-                resolve(null)
+            if (document.querySelectorAll(selector).length === 0) {
+                return
             }
+            clearInterval(i)
+            resolve(null)
         }, 100)
     })
 }
 
-export const wait = (ms: number) => {
+export const wait = (ms: number): Promise<unknown> => {
     // eslint-disable-next-line no-promise-executor-return
     return new Promise((resolve) => setTimeout(resolve, ms))
 }
