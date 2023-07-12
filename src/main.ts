@@ -1,1 +1,3 @@
-console.log("Hello World!")
+import "@total-typescript/ts-reset";
+
+console.log("Hello World!");

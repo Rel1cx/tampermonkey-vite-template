@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { defineConfig } from "vite"
-import monkey, { cdn } from "vite-plugin-monkey"
+import { defineConfig } from "vite";
+import monkey, { cdn } from "vite-plugin-monkey";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -26,9 +26,19 @@ export default defineConfig({
         }),
     ],
     build: {
-        minify: true,
+        target: ["chrome113", "safari14"],
+        minify: "terser",
+        terserOptions: {
+            ecma: 2020,
+            compress: {
+                passes: 2,
+            },
+        },
         rollupOptions: {
-            treeshake: true,
+            output: {
+                compact: true,
+                generatedCode: "es2015",
+            },
         },
     },
-})
+});

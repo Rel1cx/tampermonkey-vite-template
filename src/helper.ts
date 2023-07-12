@@ -1,31 +1,30 @@
-import { match } from "ts-pattern"
+import { identity } from "rambda";
+import { match, P } from "ts-pattern";
 
-export const isMobile = (): boolean => window.location.href.includes("/mobile/")
+export function wait(ms: number) {
+    // eslint-disable-next-line no-promise-executor-return
+    return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
-export const waitDOMContentLoaded = (): Promise<unknown> => {
+export function waitDOMContentLoaded() {
     return new Promise((resolve) => {
         match(document.readyState)
             .with("interactive", resolve)
             .with("complete", resolve)
             .otherwise(() => {
-                window.addEventListener("DOMContentLoaded", resolve)
-            })
-    })
+                window.addEventListener("DOMContentLoaded", resolve);
+            });
+    });
 }
 
-export const waitForSelector = (selector: string): Promise<unknown> => {
-    return new Promise((resolve) => {
-        const i = setInterval(() => {
-            if (document.querySelectorAll(selector).length === 0) {
-                return
-            }
-            clearInterval(i)
-            resolve(null)
-        }, 100)
-    })
-}
-
-export const wait = (ms: number): Promise<unknown> => {
-    // eslint-disable-next-line no-promise-executor-return
-    return new Promise((resolve) => setTimeout(resolve, ms))
+export async function waitForSelector(
+    selector: string,
+    container: HTMLElement | Document = document,
+): Promise<Element> {
+    return match(container.querySelector(selector))
+        .with(P.nullish, async () => {
+            await wait(100);
+            return waitForSelector(selector, container);
+        })
+        .otherwise(identity);
 }
