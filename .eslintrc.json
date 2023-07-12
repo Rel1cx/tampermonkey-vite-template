@@ -9,6 +9,7 @@
     "rules": {
         "quotes": "off",
         "indent": "off",
+        "no-await-in-loop": "off",
         "unicorn/prefer-spread": "off",
         "functional/no-return-void": "off",
         "functional/functional-parameters": "off",

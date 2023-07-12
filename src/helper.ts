@@ -1,31 +1,35 @@
-import { match } from "ts-pattern"
+import { match } from "ts-pattern";
 
-export const isMobile = (): boolean => window.location.href.includes("/mobile/")
+export function isMobile(): boolean {
+    return window.location.href.includes("/mobile/");
+}
 
-export const waitDOMContentLoaded = (): Promise<unknown> => {
+export function wait(ms: number): Promise<unknown> {
+    // eslint-disable-next-line no-promise-executor-return
+    return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+export function waitDOMContentLoaded(): Promise<unknown> {
     return new Promise((resolve) => {
         match(document.readyState)
             .with("interactive", resolve)
             .with("complete", resolve)
             .otherwise(() => {
-                window.addEventListener("DOMContentLoaded", resolve)
-            })
-    })
+                window.addEventListener("DOMContentLoaded", resolve);
+            });
+    });
 }
 
-export const waitForSelector = (selector: string): Promise<unknown> => {
-    return new Promise((resolve) => {
-        const i = setInterval(() => {
-            if (document.querySelectorAll(selector).length === 0) {
-                return
-            }
-            clearInterval(i)
-            resolve(null)
-        }, 100)
-    })
-}
+export async function waitForSelector(
+    selector: string,
+    container: HTMLElement | Document = document,
+): Promise<Element> {
+    let element = container.querySelector(selector);
 
-export const wait = (ms: number): Promise<unknown> => {
-    // eslint-disable-next-line no-promise-executor-return
-    return new Promise((resolve) => setTimeout(resolve, ms))
+    do {
+        await wait(100);
+        element = container.querySelector(selector);
+    } while (!element);
+
+    return element;
 }
