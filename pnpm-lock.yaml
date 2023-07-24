@@ -48,11 +48,11 @@ devDependencies:
     specifier: latest
     version: 5.1.6
   vite:
-    specifier: 4.4.6
-    version: 4.4.6
+    specifier: 4.4.7
+    version: 4.4.7
   vite-plugin-monkey:
     specifier: 3.3.1
-    version: 3.3.1(vite@4.4.6)
+    version: 3.3.1(vite@4.4.7)
 
 packages:
 
@@ -2072,7 +2072,7 @@ packages:
         optional: true
     dependencies:
       '@typescript-eslint/type-utils': 5.61.0(eslint@8.45.0)(typescript@5.1.6)
-      '@typescript-eslint/utils': 5.61.0(eslint@8.45.0)(typescript@5.1.6)
+      '@typescript-eslint/utils': 5.62.0(eslint@8.45.0)(typescript@5.1.6)
       deepmerge-ts: 5.1.0
       escape-string-regexp: 4.0.0
       eslint: 8.45.0
@@ -2254,7 +2254,7 @@ packages:
       '@typescript-eslint/eslint-plugin': 5.61.0(@typescript-eslint/parser@5.61.0)(eslint@8.45.0)(typescript@5.1.6)
       '@typescript-eslint/parser': 5.61.0(eslint@8.45.0)(typescript@5.1.6)
       '@typescript-eslint/type-utils': 5.61.0(eslint@8.45.0)(typescript@5.1.6)
-      '@typescript-eslint/utils': 5.61.0(eslint@8.45.0)(typescript@5.1.6)
+      '@typescript-eslint/utils': 5.62.0(eslint@8.45.0)(typescript@5.1.6)
       eslint: 8.45.0
       is-immutable-type: 1.2.9(eslint@8.45.0)(typescript@5.1.6)
       tsutils: 3.21.0(typescript@5.1.6)
@@ -4181,7 +4181,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-monkey@3.3.1(vite@4.4.6):
+  /vite-plugin-monkey@3.3.1(vite@4.4.7):
     resolution: {integrity: sha512-peroiyopLphJOJx1mRLEMr5hucSoXzNNhwQ4wmsl+7QcaXhEjDAEY7HIdRlfcDxJESByadKAm+o0YEiapjiX5w==}
     engines: {node: ^14.18 || >= 16, pnpm: '>=6'}
     peerDependencies:
@@ -4199,13 +4199,13 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       systemjs: 6.14.1
-      vite: 4.4.6
+      vite: 4.4.7
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite@4.4.6:
-    resolution: {integrity: sha512-EY6Mm8vJ++S3D4tNAckaZfw3JwG3wa794Vt70M6cNJ6NxT87yhq7EC8Rcap3ahyHdo8AhCmV9PTk+vG1HiYn1A==}
+  /vite@4.4.7:
+    resolution: {integrity: sha512-6pYf9QJ1mHylfVh39HpuSfMPojPSKVxZvnclX1K1FyZ1PXDOcLBibdq5t1qxJSnL63ca8Wf4zts6mD8u8oc9Fw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
